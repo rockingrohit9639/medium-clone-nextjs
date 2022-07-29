@@ -10,6 +10,8 @@ export interface Post {
     image: string;
   };
 
+  comments: Comment[];
+
   description: string;
 
   mainImage: {
@@ -23,4 +25,22 @@ export interface Post {
   };
 
   body: [object];
+
+  // comments: {}
+}
+
+export interface Comment {
+  approved: boolean;
+  comment: string;
+  email: srting;
+  name: string;
+  post: {
+    _ref: string;
+    _type: string;
+  };
+  _createdAt: string;
+  _id: string;
+  _rev: string;
+  _type: string;
+  _updatedAt: string;
 }
